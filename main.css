@@ -144,12 +144,19 @@ margin: auto;
 
 .warning {
 color: red;
-padding-bottom: 50px;
+padding:  20px 0px;
 }
 
 .score {
-padding-bottom: 50px;
+padding: 20px 0px;
 font-size: 50px;
+}
+
+.hint {
+padding:  20px 0px;
+width: 700px;
+margin: auto;
+font-size: 15px;
 }
 
 
@@ -188,7 +195,7 @@ font-size: 50px;
 	text-decoration:none;
 	text-align:center;
 	text-shadow:1px 1px 0px #ffffff;
-	margin: 40px auto;
+	margin: 20px auto 20px auto;
 }
 .button:hover {
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dbfffc), color-stop(1, #a9d6d2) );
