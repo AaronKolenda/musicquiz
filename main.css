@@ -1,0 +1,201 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   This is the CSS reset.
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	background-color: fff;
+	font-family: Arial,sans-serif;
+	font-size: 0.8em;
+	font-weight: bold;
+	height: 100%;
+}
+
+html {
+	height: 100%;
+	}
+	
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CSS reset is above. My CSS starts here */
+  
+#container { 			/* A container element centers the page */ 
+	position: relative;
+	text-align: center;
+	margin: auto;
+	width: 90%;
+	min-width: 800px;
+	overflow: none;
+	background-color:#F8F8F8;
+	margin-top:50px;
+	margin-bottom:50px;
+	border-radius: 10px;
+	border: 1px solid black;
+}
+
+body {
+background-image:url('musicbackground.png');
+}
+
+h1 {
+	color: #000000;
+	font-size: 25px;
+	text-align: center;
+	font-family: Arial, sans-serif;
+	text-shadow: 3px 3px #FFFACD;
+	padding-top: 30px;
+}
+
+button{
+
+	text-align:center;
+	margin: 0px auto;
+
+} 
+
+label {
+text-align:left;
+position: relative;
+
+}
+
+input[type="radio"]{ 
+margin: 20px 5px;
+width: 10px; 
+height: 10px;   
+position: relative;
+
+
+}
+
+p {
+	text-align: center;
+	text-shadow: 2px 2px #ffffff;
+	font-size: 14px;
+	font-family: Arial, sans-serif;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.question {
+width: 700px;
+margin: auto;
+}
+
+.question p {
+font-size: 18px;
+}
+
+.choices {
+text-align: left;
+position:relative;
+left:100px;
+width: 300px;
+font-size: 18px;
+font-family: Arial, sans-serif;
+margin: auto;
+}
+
+.displayButtons {				/* Buttons in there own div to display them on their own line*/
+	display:block;
+}
+
+.warning {
+color: red;
+padding-bottom: 50px;
+}
+
+.score {
+padding-bottom: 50px;
+font-size: 50px;
+}
+
+
+
+.button {
+	-moz-box-shadow: 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow: 0px 1px 0px 0px #ffffff;
+	box-shadow: 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #a9d6d2), color-stop(1, #dbfffc) );
+	background:-moz-linear-gradient( center top, #a9d6d2 5%, #dbfffc 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#a9d6d2', endColorstr='#dbfffc');
+	background-color:#a9d6d2;
+	-webkit-border-top-left-radius:0px;
+	-moz-border-radius-topleft:0px;
+	border-top-left-radius:0px;
+	-webkit-border-top-right-radius:0px;
+	-moz-border-radius-topright:0px;
+	border-top-right-radius:0px;
+	-webkit-border-bottom-right-radius:0px;
+	-moz-border-radius-bottomright:0px;
+	border-bottom-right-radius:0px;
+	-webkit-border-bottom-left-radius:0px;
+	-moz-border-radius-bottomleft:0px;
+	border-bottom-left-radius:0px;
+	text-indent:-0.85px;
+	border:1px solid #e3cfe3;
+	display:inline-block;
+	color:#282828;
+	font-family:Arial;
+	font-size:13px;
+	font-weight:bold;
+	font-style:normal;
+	height:32px;
+	line-height:32px;
+	width:85px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #ffffff;
+	margin: 40px auto;
+}
+.button:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dbfffc), color-stop(1, #a9d6d2) );
+	background:-moz-linear-gradient( center top, #dbfffc 5%, #a9d6d2 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dbfffc', endColorstr='#a9d6d2');
+	background-color:#dbfffc;
+}.button:active {
+	position:relative;
+	top:1px;
+}
