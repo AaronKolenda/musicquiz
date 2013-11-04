@@ -4,7 +4,7 @@ var score = 0;
 var counter = 0;
 
 var questionOne = new questionClass('Bach composed music in what genre?', 
-'Baroque', 'Romantic', '20-century', 'Renaissance', 1, ' Baroque ', '<iframe width="560" height="315" src="http://www.youtube.com/embed/p1XD1MSES_8" frameborder="0" allowfullscreen></iframe>');
+'Baroque', 'Romantic', '20th-Century', 'Renaissance', 1, ' Baroque ', '<iframe width="420" height="315" src="http://www.youtube.com/embed/p1XD1MSES_8" frameborder="0" allowfullscreen></iframe>');
 	questions.push(questionOne);										//added to array of objects
 	
 var questionTwo = new questionClass(('This guitarist is known as The Originator' + 
@@ -19,7 +19,7 @@ var questionThree = new questionClass(('What was the first genre of American mus
 	questions.push(questionThree);										//added to array of objects
 	
 var questionFour = new questionClass('Where did Techno first emerge?',
-'Chicago', 'Berlin', 'Detroit', 'London', 4, ' Detroit ', 'Although Germany is often associated with the origins of Electronic Music, the specific genre of Techno emerged from an American city');
+'Chicago', 'Berlin', 'Detroit', 'London', 4, ' Detroit ', 'Although Germany is often associated with the origins of Electronic Music, the specific genre of Techno emerged from an American city.');
 	questions.push(questionFour);										//added to array of objects
 	
 var questionFive = new questionClass(('Surf rock musician Dick Dale\'s guitar playing was influenced' + 
@@ -34,14 +34,14 @@ var questionSix = new questionClass('Which drummer first popularized the drum so
 	
 var questionSeven = new questionClass(('Who is credited as being the \'father\' of Hip Hop music for ' + 
 'building upon the Jamaican tradition of impromptu toasting, boastful poetry and speech over music?'),
-'Grandmaster Flash', 'DJ Kool Herc', 'Ice Cube', 'Jam Master Jay', 7, ' DJ Kool Herc ', 'Born in Jamaica, he created Hip Hop in the early 70\'s in The Bronx');
+'Grandmaster Flash', 'DJ Kool Herc', 'Ice Cube', 'Jam Master Jay', 7, ' DJ Kool Herc ', 'Born in Jamaica, he created Hip Hop in the early 70\'s in The Bronx.');
 	questions.push(questionSeven);										//added to array of objects
 	
-var questionEight = new questionClass(('This genre of Electronic Dance Music dates back to 1998, when' + 
+var questionEight = new questionClass(('The first traces of this genre of Electronic Dance Music date back to 1998, when' + 
 ' tracks were featured as B-sides of 2-step garage single releases. These tracks were darker, more' +
 ' experimental remixes with less emphasis on vocals, and attempted to incorporate elements of breakbeat' +
 ' and drum and bass into 2-step garage.'),
-'Psychedelic Trance', 'Electro House', 'Industrial', 'Dubstep', 8, ' Dubstep ', '<iframe width="560" height="315" src="http://www.youtube.com/embed/82XPZA6ul6M" frameborder="0" allowfullscreen></iframe>');
+'Psychedelic Trance', 'Electro House', 'Industrial', 'Dubstep', 8, ' Dubstep ', '<iframe width="420" height="315" src="http://www.youtube.com/embed/82XPZA6ul6M" frameborder="0" allowfullscreen></iframe>');
 	questions.push(questionEight);										//added to array of objects
 	
 var questionNine = new questionClass('Who developed the first mass-produced electric bass in the 1950\'s?',
@@ -62,12 +62,12 @@ $(document).ready(function(){
 	console.log("counter is " + counter);
 	if (counter == 1) {
 	questions[x].display();
-	$('.hint').html("Click here for a hint!");
+	$('.hint').html("...Click here for a hint!");
 	}
 	else if ((counter >= 1) && (counter <= 10)) {
 		if (questions[x].isSelected()) {
 			$('.warning').html("");
-			$('.hint').html("Click here for a hint!");
+			$('.hint').html("...Click here for a hint!");
 			questions[x].checkAnswer();
 			$('.score').html("<p>Your score is " + score + " out of 10</p>");
 			x++;

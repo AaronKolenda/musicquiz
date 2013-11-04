@@ -89,29 +89,22 @@ h1 {
 }
 
 button{
-
-	text-align:center;
+	text-align:left;
 	margin: 0px auto;
-
 } 
 
 label {
 text-align:left;
-position: relative;
-
 }
 
 input[type="radio"]{ 
 margin: 20px 5px;
 width: 10px; 
 height: 10px;   
-position: relative;
-
-
 }
 
 p {
-	text-align: center;
+	text-align: left;
 	text-shadow: 2px 2px #ffffff;
 	font-size: 14px;
 	font-family: Arial, sans-serif;
@@ -120,46 +113,57 @@ p {
 }
 
 .question {
-width: 700px;
+position:relative;
+padding: 0px 30px;
 margin: auto;
+width:750px;
 }
 
 .question p {
 font-size: 18px;
+text-align:center;
+line-height: 25px;
 }
 
-.choices {
-text-align: left;
-position:relative;
-left:100px;
+.hint {
+text-align: center;
 width: 300px;
-font-size: 18px;
+font-size: 14px;
 font-family: Arial, sans-serif;
-margin: auto;
+float:right;
+margin-right:200px;
 }
 
 .displayButtons {				/* Buttons in there own div to display them on their own line*/
 	display:block;
+	clear:both
 }
 
 .warning {
 color: red;
 padding:  20px 0px;
+clear:both;
 }
 
 .score {
-padding: 20px 0px;
 font-size: 50px;
+position: absolute;
+top:10px;
+right:50px;
 }
 
-.hint {
-padding:  20px 0px;
-width: 700px;
-margin: auto;
+.choices {
+text-align: left;
+padding:  0px 0px;
+width: 170px;
 font-size: 15px;
+float:left;
+margin-left:50px;
 }
 
-
+.leftmargin {
+margin-left: 50px;
+}
 
 .button {
 	-moz-box-shadow: 0px 1px 0px 0px #ffffff;
