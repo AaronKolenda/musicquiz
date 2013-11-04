@@ -112,7 +112,7 @@ p {
 	margin-bottom: 20px;
 }
 
-.question {
+.question {				/* A div that will contain the question*/
 position:relative;
 padding: 0px 30px;
 margin: auto;
@@ -125,7 +125,7 @@ text-align:center;
 line-height: 25px;
 }
 
-.hint {
+.hint {					/* A div that will contain the hint for each question*/
 text-align: center;
 width: 300px;
 font-size: 14px;
@@ -134,25 +134,25 @@ float:right;
 margin-right:200px;
 }
 
-.displayButtons {				/* Buttons in there own div to display them on their own line*/
+.displayButtons {		/* Buttons in there own div to display them on their own line*/
 	display:block;
 	clear:both
 }
 
-.warning {
+.warning {				/* A div that will contain notification that the user hasn't entered anything*/
 color: red;
 padding:  20px 0px;
 clear:both;
 }
 
-.score {
+.score {					/* A div that will contain the user's score*/
 font-size: 50px;
 position: absolute;
 top:10px;
 right:50px;
 }
 
-.choices {
+.choices {				/* A div that will contain the four choices for each question*/
 text-align: left;
 padding:  0px 0px;
 width: 170px;
@@ -161,7 +161,7 @@ float:left;
 margin-left:50px;
 }
 
-.leftmargin {
+.leftmargin {			/* Keep the intro paragraph to 50px from the left*/
 margin-left: 50px;
 }
 
